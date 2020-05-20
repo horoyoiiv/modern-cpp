@@ -1,5 +1,12 @@
 # modern-cpp
 
+## [1.안전한 casting](/all/cast.md)  
+* static_cast<T>() : 컴파일 시점에 invalid한 캐스팅을 잡는다.  
+* dynamic_cast<T>() : 런타임에 invalid한 **다운캐스팅**을 잡는다. 
+* reinterpret_cast<T>() : 서로 다른 클래스 타입 간의 캐스팅이 가능.  
+  
+  
+
 ## 기본적인 용어  
 #### 1. 선언  
 * [타입(자료형)] + [이름]을 지정하는 것.  
