@@ -1,9 +1,9 @@
 # modern-cpp
 
 ## [1.안전한 casting](/all/cast.md)  
-* static_cast<T>() : 컴파일 시점에 invalid한 캐스팅을 잡는다.  
-* dynamic_cast<T>() : 런타임에 invalid한 **다운캐스팅**을 잡는다. 
-* reinterpret_cast<T>() : 서로 다른 클래스 타입 간의 캐스팅이 가능.  
+* **static_cast<T>()** : 컴파일 시점에 invalid한 캐스팅을 잡는다.  
+* **dynamic_cast<T>()** : 런타임에 invalid한 **다운캐스팅**을 잡는다. 
+* **reinterpret_cast<T>()** : 서로 다른 클래스 타입 간의 캐스팅이 가능.  
   
 ## [2. 이동 생성자](/all/move_cons.md)  
 * c++11 이전에는 임시 객체를 바탕으로 새로운 객체 생성 시 `복사 생성자`가 호출되었고 이는 곧 불필요하고 과도한 메모리 복사를 유발했다.  
@@ -19,6 +19,12 @@ User(User&& rhs){
 ## [3. 타입 추론](/all/deduction.md)  
 * **auto** : `초기화 값`에 의해 컴파일러가 타입을 추론한다.  
 * **decltype** : 변수나 expression이 인자처럼 넘어와서 이를 통해 타입을 추론한다.  
+
+## [4. explicit](/all/explicit.md)  
+* 생성자가 호출되어 **암시적 형변환**이 되는 것을 방지한다.  
+```c++
+User u = 10;    
+```
 
 
 
