@@ -25,6 +25,10 @@ User(User&& rhs){
 ```c++
 User u = 10;    
 ```
+## [5. mutable](/all/const_mutable.md)  
+* mutable 변수는 `const 멤버 함수`내에서도 수정이 가능해진다.  
+
+
 
 
 
