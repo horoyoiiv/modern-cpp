@@ -29,6 +29,24 @@ User u = 10;
 * mutable 변수는 `const 멤버 함수`내에서도 수정이 가능해진다.  
 
 
+# functional  
+
+## [1. std::function](/all/function.md)  
+* callable 혹은 함수 포인터를 가질 수 있는 객체  
+```c++
+std::function<int(int, int)> myf = foo();
+myf(10, 20);
+```
+
+## [2. std::bind](/all/bind.md)  
+* `함수`에 넘겨줄 `인자`가 미리 결정되었다면 이를 `동적으로` 바인딩시켜주는 역할.  
+왜 동적? default 값을 지정하면 컴파일 시점에 가능하기 때문  
+
+```c++
+auto my_f = std::bind(my_function, std::placeholders::_1, 100, std::placeholders::_2);
+```
+
+
 
 
 
