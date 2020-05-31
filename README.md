@@ -28,6 +28,13 @@ User u = 10;
 ## [5. mutable](/all/const_mutable.md)  
 * mutable 변수는 `const 멤버 함수`내에서도 수정이 가능해진다.  
 
+## [6. 스마트 포인터](/all/spointer.md)  
+* RAII 패턴이 적용된 C++의 메모리 관리 기법  
+1. unique_ptr  
+2. shared_ptr  
+3. weak_ptr  
+
+
 
 # functional  
 
